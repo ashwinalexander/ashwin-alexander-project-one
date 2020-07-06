@@ -414,6 +414,7 @@
         margin-top: 10px;
         text-transform: uppercase;
         background-color: #f5c8cf;
+        padding: 5px 10px;
     }
     /* top level styles begin */
     
@@ -654,9 +655,10 @@
         padding: 20px;
         color: white;
     }
-    /* media queries going down */
+    /* media queries begin */
     
     @media (max-width: 1000px) {
+        /* contact us section and footer */
         .stay-updated {
             width: 100%;
             text-align: center;
@@ -682,30 +684,44 @@
         }
     }
     
-    @media (max-width: 500px) {
-        .stay-updated {
-            width: 100%;
-            text-align: center;
+    @media (max-width: 520px) {
+        /* contact us section and footer */
+        .contact-details {
+            padding-left: 10px;
         }
-        .stay-updated p {
-            text-align: center;
-            padding: 5px;
+        .contact-details p {
+            line-height: 2rem;
         }
-        .stay-updated input[type='text'] {
-            display: block;
-            width: 100%;
-            text-align: center;
+        .contact-details h5 {
+            padding-bottom: 10px;
+        }
+        .contact-us {
+            padding: 30px 10px;
+        }
+        .lower-nav {
+            padding-right: 10px;
         }
         .lower-nav a,
         .contact-us h5 {
             font-size: 2rem;
         }
-        .contact-us p {
+        .contact-us p,
+        footer p {
             font-size: 1.5rem;
+            padding: 3px;
         }
     }
-    /*
-
-
-
-*/
+    
+    @media (max-width: 400px) {
+        /* contact us section and footer */
+        .contact-us {
+            padding: 30px 5px;
+        }
+        .lower-nav a,
+        .contact-us h5 {
+            font-size: 1.8rem;
+        }
+        footer p {
+            font-size: 1.2rem;
+        }
+    }
