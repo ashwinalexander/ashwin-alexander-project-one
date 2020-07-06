@@ -115,18 +115,21 @@
         <section class="wrapper clearfix icon-row">
             <ul>
                 <li>
-                    <div><i class="fas fa-car"></i>
+                    <div><i class="fas fa-car" aria-label="car"></i>
                         <h4>shop</h4>
 
                     </div>
                 </li>
                 <li>
-                    <div><i class="fas fa-briefcase"></i>
-                        <h4>jobs</h4>
+                    <div><i class="fas fa-briefcase" aria-label="briefcase"></i>
+                        <!-- this sneaky text only appears on desktop -->
+                        <h4 class="desktop-jobs-only">jobs</h4>
+                        <!-- this sneaky text only appears on mobile -->
+                        <h4 class="mobile-community-only">community</h4>
                     </div>
                 </li>
                 <li>
-                    <div><i class="fas fa-calendar-check"></i>
+                    <div><i class="fas fa-calendar-check" aria-label="calendar"></i>
                         <h4>events</h4>
                     </div>
                 </li>

@@ -570,6 +570,11 @@
     }
     /* icon row styles */
     
+    .mobile-community-only {
+        visibility: hidden;
+        font-size: 0rem;
+    }
+    
     .icon-row {
         list-style: none;
         padding: 40px 0px;
@@ -685,6 +690,10 @@
     }
     
     @media (max-width: 520px) {
+        .icon-row li {
+            float: none;
+            width: 100%;
+        }
         /* contact us section and footer */
         .contact-details {
             padding-left: 10px;
@@ -713,6 +722,16 @@
     }
     
     @media (max-width: 400px) {
+        /* icon row */
+        .icon-row {
+            padding: 20px 0px;
+        }
+        .icon-row i {
+            font-size: 4rem;
+        }
+        .icon-row h4 {
+            font-size: 2.5rem;
+        }
         /* contact us section and footer */
         .contact-us {
             padding: 30px 5px;
@@ -723,5 +742,11 @@
         }
         footer p {
             font-size: 1.2rem;
+        }
+        .desktop-jobs-only {
+            display: none;
+        }
+        .mobile-community-only {
+            visibility: visible;
         }
     }
