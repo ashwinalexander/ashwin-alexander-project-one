@@ -4,11 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Electric Select - best home appliances</title>
+    <!-- importing Google fonts: Barlow and Emblema One -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Emblema+One&display=swap" rel="stylesheet">
+    <!-- linking to an external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- linking to fontawesome icons -->
+    <script src="https://kit.fontawesome.com/0a20410b2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <header class="wrapper">
+        <!-- header navigation controls -->
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><i class="fas fa-bars" aria-label="menu"></i></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- hero image and text -->
+        <section class="wrapper clearfix">
+            <div class="left-hero">
+                <h1>electric select</h1>
+                <h6>best home appliances</h6>
+            </div>
+            <div class="right-hero">
+                <img src="./assets/header-group-appliances.png" alt="electric appliances for sale including ovens refrigerators washing machines and microwaves" class="class-hero">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
 
+                    </ul>
+
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+    <main>
+        <!-- news appliances section -->
+        <section class="wrapper news-appliances clearfix">
+            <div class="news-appliances-header">
+                <h2>news appliances</h2>
+            </div>
+            <ul class="news-appliances-examples">
+                <li><img src="./assets/gallery-photo-1.jpg" alt="Panasonic microwave"></li>
+                <li><img src="./assets/gallery-photo-2.jpg" alt="Magimix blender"></li>
+                <li><img src="./assets/gallery-photo-3.jpg" alt="four slice toaster"></li>
+            </ul>
+        </section>
+        <!-- best appliances section -->
+        <section class="wrapper">
+            <div class="appliances-coffee clearfix">
+                <div class="appliances-coffee-left">
+                    <img src="./assets/square-photo.jpg" alt="top view of a coffee grinder">
+                </div>
+                <div class="appliances-coffee-right">
+                    <div>
+                        <h2>best appliances for coffee</h2>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div> <button type="Submit" class="button-coffee-appliances">read more</button></div>
+                </div>
+            </div>
+        </section>
+        <!-- blog post section -->
+        <section class="wrapper clearfix blogs">
+            <div class="left-half blog-post">
+                <h3>smoothies anyone?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum connsequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem,
+                    a blandit sem. Quisque interdum orci.</p>
+                <button class="half-button">read more</button>
+            </div>
+            <div class="right-half">
+                <img src="./assets/right-photo.jpg" alt="green smoothie and a blender on a kitchen counter-top">
+            </div>
+        </section>
+        <!-- blog post section again-->
+        <section class="wrapper clearfix blogs">
+            <div class="left-half">
+                <img src="./assets/left-photo.jpg" alt="kitchen with an oven, stove, overhead microwave and cupboards">
+            </div>
+            <div class="right-half blog-post">
+                <h3>new home, new appliances</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor a elementum eleifend. Vestibulum connsequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus. Vestibulum vitae tincidunt sem,
+                    a blandit sem. Quisque interdum orci.</p>
+                <button>read more</button>
+            </div>
+        </section>
+        <!-- icon section  -->
+        <section class="wrapper clearfix icon-row">
+            <ul>
+                <li>
+                    <div><i class="fas fa-car"></i>
+                        <h4>shop</h4>
+
+                    </div>
+                </li>
+                <li>
+                    <div><i class="fas fa-briefcase"></i>
+                        <h4>jobs</h4>
+                    </div>
+                </li>
+                <li>
+                    <div><i class="fas fa-calendar-check"></i>
+                        <h4>events</h4>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- contact us section -->
+        <section class="wrapper clearfix contact-us">
+            <div class="stay-updated">
+                <h5>stay updated</h5>
+                <p>Subscribe to our newsletter to stay updated</p>
+                <input type="text" placeholder="email address">
+                <button>subscribe</button>
+            </div>
+            <div class="contact-details">
+                <h5>contact</h5>
+                <p>info@email.com 123-456-7890 </p>
+                <p>123 some road, Toronto, ON </p>
+                <p> 5A5, Canada</p>
+            </div>
+
+            <div class="lower-nav">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <!-- footer section -->
+    <footer class="wrapper">
+        <p>Copyright © 2020 Juno College</p>
+    </footer>
 </body>
 
 </html>
