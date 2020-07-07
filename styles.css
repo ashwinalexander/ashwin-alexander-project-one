@@ -704,6 +704,15 @@ footer p {
     }
 }
 
+@media (min-width: 1000px) {
+    .blog-r {
+        float: right;
+    }
+    .blog-l {
+        float: left;
+    }
+}
+
 @media (max-width: 1000px) {
     /* news appliances section */
     .news-appliances-examples li {
