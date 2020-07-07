@@ -464,7 +464,9 @@ nav li:nth-of-type(4) {
 }
 
 nav li i {
+    font-size: 2.0rem;
     visibility: hidden;
+    color: #042259;
 }
 
 
@@ -497,7 +499,7 @@ header {
 
 .social-icons {
     position: absolute;
-    top: 40px;
+    top: 20px;
     right: 22px;
 }
 
@@ -652,7 +654,7 @@ header {
     font-size: 1.7rem;
     width: 50%;
     border: 2px solid #f5cdcf;
-    padding: 5px;
+    padding: 10px;
 }
 
 .contact-us button {
@@ -692,6 +694,15 @@ footer p {
 
 
 /* media queries begin below */
+
+@media (max-width: 1136px) {
+    /* hero section */
+    .left-hero h1 {
+        font-size: 7.4rem;
+        line-height: 7.7rem;
+        margin: 80px 0px 0px 50px;
+    }
+}
 
 @media (max-width: 1000px) {
     /* news appliances section */
@@ -742,7 +753,52 @@ footer p {
     }
 }
 
+@media (max-width: 870px) {
+    nav li a {
+        padding: 8px;
+        font-size: 1.7rem;
+    }
+    /* hero section */
+    .left-hero h1 {
+        font-size: 5.4rem;
+        line-height: 5.7rem;
+        margin-top: 0px;
+    }
+    .social-icons i {
+        font-size: 1.5rem;
+        padding: 3px;
+    }
+}
+
+@media(max-width: 770px) {
+    /* let's give the ipad  a hamburger */
+    nav li i {
+        visibility: visible;
+        padding: 20px 30px 0px 0px;
+    }
+    nav li a {
+        display: none;
+    }
+}
+
 @media (max-width: 750px) {
+    .left-hero {
+        width: 70%;
+        float: left;
+    }
+    .left-hero h1 {
+        font-size: 3.4rem;
+        line-height: 3.7rem;
+        margin-left: 20px;
+    }
+    .left-hero h6 {
+        margin-left: 20px;
+    }
+    .right-hero {
+        width: 70%;
+        float: right;
+        margin-left: 190px;
+    }
     /* news appliances section */
     .news-appliances-header {
         padding: 20px;
@@ -752,10 +808,6 @@ footer p {
         float: left;
         margin: 15px 10px;
         width: calc(100%/3 - 20px);
-    }
-    /* getting rid of social icons */
-    .social-icons {
-        display: none;
     }
     /* coffee appliances section */
     .appliances-coffee-left {
@@ -775,6 +827,17 @@ footer p {
 }
 
 @media (max-width: 520px) {
+    /* getting rid of social icons */
+    .social-icons {
+        display: none;
+    }
+    .left-hero h1 {
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+    }
+    .left-hero h6 {
+        font-size: 1.5rem;
+    }
     /* news appliances section */
     .appliances-coffee h2,
     .news-appliances-header h2 {
@@ -785,7 +848,6 @@ footer p {
     .news-appliances-examples li:last-of-type {
         display: none;
     }
-    /* assuming the third appliance is hidden */
     .news-appliances-examples li {
         float: left;
         margin: 15px 10px;
