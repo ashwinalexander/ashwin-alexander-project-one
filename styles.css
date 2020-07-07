@@ -505,10 +505,14 @@
         text-align: center;
     }
     
+    .news-appliances-examples {
+        margin: 0px 20px;
+    }
+    
     .news-appliances-examples li {
         float: left;
-        margin: 15px 40px;
-        width: calc(100%/3 - 80px);
+        margin: 15px 30px;
+        width: calc(100%/3 - 60px);
     }
     /* best appliances section styles */
     
@@ -663,6 +667,12 @@
     /* media queries begin below */
     
     @media (max-width: 1000px) {
+        /* news appliances section */
+        .news-appliances-examples li {
+            float: left;
+            margin: 15px 20px;
+            width: calc(100%/3 - 40px);
+        }
         /* blog post section */
         .left-half {
             width: 100%;
@@ -705,7 +715,39 @@
         }
     }
     
+    @media (max-width: 750px) {
+        /* news appliances section */
+        .news-appliances-header {
+            padding: 20px;
+            text-align: center;
+        }
+        .news-appliances-examples li {
+            float: left;
+            margin: 15px 10px;
+            width: calc(100%/3 - 20px);
+        }
+        /* getting rid of social icons */
+        .social-icons {
+            display: none;
+        }
+    }
+    
     @media (max-width: 520px) {
+        /* news appliances section */
+        .news-appliances-header h2 {
+            font-size: 2.7rem;
+            line-height: 2.5rem;
+        }
+        /* hide the third appliance */
+        .news-appliances-examples li:last-of-type {
+            display: none;
+        }
+        /* assuming the third appliance is hidden */
+        .news-appliances-examples li {
+            float: left;
+            margin: 15px 10px;
+            width: calc(100%/2 - 20px);
+        }
         /* blog posts */
         .blogs {
             background-color: #fcdde2;
