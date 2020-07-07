@@ -660,9 +660,25 @@
         padding: 20px;
         color: white;
     }
-    /* media queries begin */
+    /* media queries begin below */
     
     @media (max-width: 1000px) {
+        /* blog post section */
+        .left-half {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        .right-half {
+            width: 100%;
+            float: none;
+            text-align: center;
+        }
+        /*  button color changes for non-desktop form factors */
+        .half-button {
+            color: white;
+            background-color: #042259;
+        }
         /* contact us section and footer */
         .stay-updated {
             width: 100%;
@@ -690,6 +706,26 @@
     }
     
     @media (max-width: 520px) {
+        /* blog posts */
+        .blogs {
+            background-color: #fcdde2;
+        }
+        .blog-post h3 {
+            font-size: 2.7rem;
+            line-height: 2.5rem;
+        }
+        .blog-post {
+            padding: 50px 20px;
+        }
+        .blog-post p {
+            font-size: 1.5rem;
+            line-height: 2.20rem;
+            text-align: left;
+        }
+        /* icon row */
+        .icon-row {
+            background-color: #f5c8cf;
+        }
         .icon-row li {
             float: none;
             width: 100%;
